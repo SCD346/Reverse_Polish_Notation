@@ -20,12 +20,15 @@ function RPNotation() {
     var foundNumbers = arraySplitter(valueAsArray)
 
     console.log(foundNumbers)
-//TODO
-    //Find the operators in  and push them into an array
 
+    //Find the operators in 'valueAsArray' and push them into a new array - 'foundOperators'
+    //'foundOperators' will now contain the input operators in REVERSE order
+    //EXAMPLE- Input: 10 9 8 7 - + + yields -> foundOperators['+', '+', '-']
+    var foundOperators = findTheOperators(operators, valueAsArray)
+    console.log(foundOperators)
+
+    //TODO
     //Combine the operators with the numbers
-
-    //Reverse the oder of operators when 2 or more present??
 
     // Set final reordered array back into a string
 
@@ -57,6 +60,23 @@ function arraySplitter(valueAsArray) {
         return !Number.isNaN(value);
     });
     return newArray;
+}
+
+// Push operators into its own array.  Reverses the order of the operators.
+function findTheOperators (operators, valueAsArray) {
+    let foundOperators = [];
+    //Loop over each element in 'operators'
+    for (let i = 0; i < operators.length; i++) {
+        //Loop over every element in 'valueAsArray'
+        for (let j = 0; j < valueAsArray.length; j++) {
+            //Check if the elements match
+            if (operators[i] === valueAsArray[j]) {
+                //If there is a match, push it into 'foundOperators'
+              foundOperators.push(operators[i]);
+            }
+        }
+    }
+    return foundOperators;
 }
 
 //EVENT LISTENERS
