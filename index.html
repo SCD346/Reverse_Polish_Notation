@@ -5,16 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <title>CodeWars</title>
+    <title>Reverse Polish Notation</title>
 </head>
 <body>
-    <url>PROBLEM URL</url>
-            <h1>CodeWars: PROBLEM TITLE</h1>
-            <h2>Description: DESCRIPTION</h2>
-                <code>PROVIDED CODE OR TESTS, RESULTS </code>
-                <h2>Note: NOTES</h2>
-
-                <h1 id="returnValue">Return Value</h1>
+    <url>https://en.wikipedia.org/wiki/Reverse_Polish_notation</url>
+            <h1>Interview Question: Reverse Polish Notation</h1>
+            <h2>Description: Write a program to function as a Reverse Polish notation calculator.</h2>
+            <h4>Here are some examples of inputs and outputs from this program:</h4>
+                <code>
+                    2 5 +
+                    # equivalent to: 2 + 5 = 7
+                    # output: 7
+                </br>
+                    1 30 -
+                    # equivalent to: 1 - 30 = -29
+                    # output: -29
+                </br>
+                    3 6 * 2 /
+                    # equivalent to: (3 * 6) / 2 = 9
+                    # output: 9
+                </br>
+                    3 4 2 * -
+                    # equivalent to: 3 - (4 * 2) = -5
+                    # output: -5
+                </br>
+                    10 9 8 7 - + +
+                    # equivalent to: 10 + (9 + (8 - 7)) = 20
+                    # output: 20
+                </br>
+                    1
+                    # output: 1
+                </code>
+                <h4>Note: For the sake of simplicity, for now you can ignore invalid input strings and assume that all input numbers are integers</h4>
 
 <script src="script.js"></script>
 </body>
