@@ -11,12 +11,16 @@ let operators = ['+', '-', '*', '/']
 // which has a output of 20.
 
 function RPNotation() {
+    //Takes input string, converts it into array (of strings)
+    let valueAsArray = inputValue.value.split(' ')
+    console.log(valueAsArray)
 
-    //TODO
-    //Take in a string, convert it into array
+    //Convert 'valueAsArray' into an array of numbers only, remove operators(Nans)
+    //10 9 8 7 - + + yields valueAsArray[10, 9, 8, 7]
+    var foundNumbers = arraySplitter(valueAsArray)
 
-    //Convert into an array of numbers only, remove operators?
-
+    console.log(foundNumbers)
+//TODO
     //Find the operators in  and push them into an array
 
     //Combine the operators with the numbers
@@ -44,6 +48,16 @@ function clear(){
     inputValue.value = ''
 }
 
+//Get an array of numbers only from the string array.
+function arraySplitter(valueAsArray) {
+    //Convert array of strings into an array of numbers
+    let result = valueAsArray.map(i=>Number(i));
+    //Filter out the Nan values (operators)
+    let newArray = result.filter(function (value) {
+        return !Number.isNaN(value);
+    });
+    return newArray;
+}
 
 //EVENT LISTENERS
 submitBtn.addEventListener('click', RPNotation)
