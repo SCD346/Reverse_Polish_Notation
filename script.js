@@ -28,7 +28,9 @@ function RPNotation() {
     console.log(foundOperators)
 
     //TODO
-    //Combine the operators with the numbers
+    // //Combine the operators with the numbers
+    var reorderInputArray = combineBack(foundNumbers, foundOperators)
+    inputValueDisplay.innerHTML = (inputValue.value)
 
     // Set final reordered array back into a string
 
@@ -77,6 +79,19 @@ function findTheOperators (operators, valueAsArray) {
         }
     }
     return foundOperators;
+}
+
+//Combine the operators array (foundOperators) with the numbers array (foundNumbers).
+        //foundOperators are in reverse order from the original
+function combineBack(foundNumbers, foundOperators) {
+    let reorderInputArray = [],
+    i, l = Math.min(foundNumbers.length, foundOperators.length);
+
+    for (i = 0; i < l; i++) {
+        reorderInputArray.push(foundNumbers[i], foundOperators[i]);
+    }
+    reorderInputArray.push(...foundNumbers.slice(l), ...foundOperators.slice(l));
+    return (reorderInputArray);
 }
 
 //EVENT LISTENERS
