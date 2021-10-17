@@ -12,7 +12,22 @@ let operators = ['+', '-', '*', '/']
 
 function RPNotation() {
 
+
+    //Clear the input field
+    clear()
+
+    return finalResult
 }
+
+
 //HELPER FUNCTIONS
+// 1 Clear input after submit
+function clear(){
+    inputValue.value = ''
+}
+
+
 //EVENT LISTENERS
+
+
 //NOTES
