@@ -12,6 +12,24 @@ let operators = ['+', '-', '*', '/']
 
 function RPNotation() {
 
+    //TODO
+    //Take in a string, convert it into array
+
+    //Convert into an array of numbers only, remove operators?
+
+    //Find the operators in  and push them into an array
+
+    //Combine the operators with the numbers
+
+    //Reverse the oder of operators when 2 or more present??
+
+    // Set final reordered array back into a string
+
+    // Calculate the result based on new string
+
+    //Display result in HTML
+
+
     console.log('submit btn works')
     //Clear the input field
     clear()
