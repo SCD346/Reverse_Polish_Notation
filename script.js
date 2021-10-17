@@ -12,11 +12,11 @@ let operators = ['+', '-', '*', '/']
 
 function RPNotation() {
 
-
+    console.log('submit btn works')
     //Clear the input field
     clear()
 
-    return finalResult
+    //return finalResult
 }
 
 
@@ -28,6 +28,7 @@ function clear(){
 
 
 //EVENT LISTENERS
+submitBtn.addEventListener('click', RPNotation)
 
 
 //NOTES
