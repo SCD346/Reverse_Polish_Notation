@@ -1,0 +1,30 @@
+.input-container, .return-container{
+    border: 1px solid black;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#input-sub-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-container button {
+    width: 10%;
+    margin: 10px 0 10px 0;
+}
+
+.prob-input {
+    width: 80%;
+    height: 10%;
+}
+
+.return-container {
+    flex-direction: row;
+}
+
+#returnValue {
+    margin-left: 20px;
+}
