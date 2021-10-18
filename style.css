@@ -17,8 +17,9 @@
 }
 
 .prob-input {
-    width: 80%;
+    width: 30%;
     height: 10%;
+    border: 1px solid black;
 }
 
 .return-container {
@@ -27,4 +28,21 @@
 
 #returnValue {
     margin-left: 20px;
+}
+
+@media(max-width: 500px) {
+    body {
+        margin-right: 30px;
+        font-size: smaller;
+    }
+    #submit-button {
+        width: 25%;
+    }
+
+    .prob-input {
+        width: 50%;
+        height: 150%;
+        /* margin-bottom: 15px; */
+        border: 1px solid black;
+    }
 }
