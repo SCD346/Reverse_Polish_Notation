@@ -125,3 +125,4 @@ submitBtn.addEventListener('click', RPNotation)
   // #3 - Found the Function Constructor solution as an alternative to eval()
         // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
         // https://stackoverflow.com/questions/6479236/calculate-string-value-in-javascript-not-using-eval
+    //I think this step could be improved/expanded with a switch statement.
